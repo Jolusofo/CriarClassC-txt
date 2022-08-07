@@ -1,5 +1,5 @@
 
-<div style="display: grid; grid-template-columns: 90vw;justify-content: center; padding-top: 10vh;">
+<div style="display: grid; grid-template-columns: 90vw;justify-content: center; padding-top: 10vh; height: 50vh;">
   <mat-card style="display: grid; grid-template-columns: 1fr 1fr;">
     <div style="display:grid; grid-template-columns:0.5fr 0.3fr;">
     <div>
@@ -34,7 +34,7 @@
   </div>
 
 </div>
-    <button mat-raised-button color="primary" (click)="escreverArquivo()">Gerar Classe</button>
+    <button [disabled]="disabledBotaoGeraClass()" style="height: 3rem;" mat-raised-button color="primary" (click)="escreverArquivo()">Gerar Classe</button>
 
   </mat-card>
 
